@@ -1,0 +1,23 @@
+[
+    {
+        "id": 22,
+        "title": "event1",
+        "start": "2021-03-15 14:00:00",
+        "end": "2021-03-15 16:00:00",
+        "color": "#005cbf",
+        "description" : "aaaa"
+    },
+    {
+        "id": 21,
+        "title": "event2",
+        "start": "2021-03-16 14:00:00",
+        "end": "2021-03-16 16:00:00",
+        "color": "#005cbf"
+    }
+
+]
+ALTER TABLE events
+ADD CONSTRAINT fk_usersUid
+FOREIGN KEY (usersUid) REFERENCES users(usersUid);
+
+ALTER TABLE ADD PRIMARY KEY (usersUid)
