@@ -12,6 +12,7 @@ $sql = "SELECT * FROM events WHERE usersUid = ?;";
     mysqli_stmt_bind_param($stmt, "s", $_SESSION["useruid"]);
     mysqli_stmt_execute($stmt);
     $resultData = mysqli_stmt_get_result($stmt);
+    
     foreach($resultData as $row)
         {
         $data[] = array(
@@ -25,7 +26,6 @@ $sql = "SELECT * FROM events WHERE usersUid = ?;";
 
         );
         }
-
     echo json_encode($data);
     mysqli_stmt_close($stmt);
 

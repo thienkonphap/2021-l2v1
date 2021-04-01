@@ -1,9 +1,50 @@
 #calendar{
-    width: 60%;
+    width: 80%;
     margin: 20px auto;
 }
 *{
-    font-family: 'Poppins', sans-serif;}
-.fc-header-toolbar{
-    
+    font-family: 'Poppins', sans-serif;
+}
+.flex-container{
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.logo{
+  width:240px;
+}
+
+.detail{
+  border: 2px solid black;
+  border-top: none;
+  border-right: none;
+  width:320px;
+  flex: 0 0 auto;
+  padding: 10px;
+}
+
+.detail h1{
+  text-align: center;
+  text-decoration: underline;
+}
+
+div.flex-container{
+  height: 100%;
+}
+
+.gauche{
+  display: flex;
+  flex-direction: column;
+}
+.gauche a{
+  background-color: rgb(145,12,50);
+  color: white;
+	text-decoration: none;
+	border: 2px solid rgb(085, 022, 033);
+	padding: 10px;
+  margin: 12px 2px;
+	border-radius: 4px;
 }
